@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.plugins.tfs.model.WorkspaceConfiguration plugin="tfs@3.0.1">
+      <workspaceName>Hudson-Test Project-MASTER</workspaceName>
+      <workfolder>.</workfolder>
+      <projectPath>$/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo</projectPath>
+      <serverUrl>http://tfs.aditi.com:8080/tfs/corp</serverUrl>
+      <workspaceExists>true</workspaceExists>
+    </hudson.plugins.tfs.model.WorkspaceConfiguration>
+    <hudson.plugins.tfs.TFSRevisionState plugin="tfs@3.0.1">
+      <changesetVersion>7444</changesetVersion>
+      <projectPath>$/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo</projectPath>
+    </hudson.plugins.tfs.TFSRevisionState>
+  </actions>
+  <number>18</number>
+  <startTime>1388734400792</startTime>
+  <result>SUCCESS</result>
+  <duration>14405</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace</workspace>
+  <hudsonVersion>1.545</hudsonVersion>
+  <scm class="hudson.plugins.tfs.ChangeSetReader" plugin="tfs@3.0.1"/>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>ADITI_sudharsang</string>
+  </culprits>
+</build>

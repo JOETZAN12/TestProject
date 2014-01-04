@@ -1,0 +1,36 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:31:22Z -noprompt ********
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace:
+Conflict WebApplicationDemo.sln - Unable to perform the get operation because you have a conflicting edit
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo:
+Conflict WebApplicationDemo.csproj - Unable to perform the get operation because you have a conflicting edit
+The file C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo.sln is not available.
+The file C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj is not available.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:31:23Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+7444      ADITI\sudharsang  1/3/2014   Update to 2012
+[workspace] $ cmd /c call C:\Windows\TEMP\hudson3726541857587291344.bat
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace>call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x86 
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine version 4.0.30319.17929
+[Microsoft .NET Framework, version 4.0.30319.18051]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+MSBUILD : error MSB1009: Project file does not exist.
+Switch: webapplicationdemo.sln
+Build step 'Build a Visual Studio project or solution using MSBuild' marked build as failure
+Finished: FAILURE

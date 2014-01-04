@@ -1,0 +1,110 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+Deleting workspace as the configuration has changed since a build was performed on this computer.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -delete "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -new "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workfold -map $/TFSManagement/Source/Tools/DemoBuild/HelloWorld "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace" "-workspace:Hudson-Test Project-MASTER" -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:05:29Z -noprompt ********
+C:\Program Files (x86)\Jenkins\jobs\Test Project:
+Getting workspace
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace:
+Getting CustomDlls
+Getting HelloWorld
+Getting HelloWorld.sln
+Getting HelloWorld.vsmdi
+Getting HelloWorld.vssscc
+Getting HelloWorldSetup
+Getting HelloWorldTest
+Getting Local.testsettings
+Getting TestResults
+Getting TraceAndTestImpact.testsettings
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\CustomDlls:
+Getting TfsBuild.NuGetter.Activities.dll
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld:
+Getting Default.aspx
+Getting Default.aspx.cs
+Getting Default.aspx.designer.cs
+Getting HelloWorld.csproj
+Getting HelloWorld.csproj.user
+Getting HelloWorld.csproj.vspscc
+Getting Properties
+Getting Web.config
+Getting Web.Debug.config
+Getting Web.Release.config
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorldSetup:
+Getting HelloWorldSetup.vdproj
+Getting HelloWorldSetup.vdproj.vspscc
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorldTest:
+Getting HelloWorldTest.csproj
+Getting HelloWorldTest.csproj.vspscc
+Getting Properties
+Getting SampleTest.cs
+Getting Test References
+Getting UnitTest1.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorldTest\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorldTest\Test References:
+Getting HelloWorld.accessor
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\TestResults:
+Getting akanchhas_ADITIDT865 2012-12-19 12_13_56.trx
+Getting akanchhas_ADITIDT865 2012-12-19 12_14_06.trx
+Getting akanchhas_ADITIDT865 2012-12-19 13_49_11.trx
+Getting akanchhas_ADITIDT865 2012-12-19 13_50_06.trx
+Getting akanchhas_ADITIDT865 2012-12-19 13_51_03.trx
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/HelloWorld -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:05:30Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+4621      ADITI\akanchhas   1/17/2013  added for TF checkin
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release helloWorld.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release helloWorld.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine Version 3.5.30729.6387
+[Microsoft .NET Framework, Version 2.0.50727.6387]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+HelloWorld\HelloWorld.csproj : Solution file warning MSB4122: Scanning project dependencies for project "HelloWorld\HelloWorld.csproj" failed. The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj
+Build started 1/3/2014 12:35:42 PM.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" on node 0 (default targets).
+  Building solution configuration "Release|Any CPU".
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" (default target) (1) ->
+  HelloWorld\HelloWorld.csproj : Solution file warning MSB4122: Scanning project dependencies for project "HelloWorld\HelloWorld.csproj" failed. The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj
+
+
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" (default target) (1) ->
+(Build target) -> 
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+    1 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.53
+Build step 'Build a Visual Studio project or solution using MSBuild' marked build as failure
+Finished: FAILURE

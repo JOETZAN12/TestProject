@@ -1,0 +1,41 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:13:51Z -noprompt ********
+All files are up to date.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/HelloWorld -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:13:52Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+4621      ADITI\akanchhas   1/17/2013  added for TF checkin
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release helloWorld.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release helloWorld.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine Version 3.5.30729.6387
+[Microsoft .NET Framework, Version 2.0.50727.6387]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+Build started 1/3/2014 12:43:55 PM.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" on node 0 (default targets).
+  Building solution configuration "Release|Any CPU".
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\helloWorld.sln" (default target) (1) ->
+(Build target) -> 
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\HelloWorld\HelloWorld.csproj(78,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.25
+Build step 'Build a Visual Studio project or solution using MSBuild' marked build as failure
+Finished: FAILURE

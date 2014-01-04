@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file
+  name="WebApplicationDemo.SiteMaster"
+  last-modified="0"
+>
+  <violation
+    line="0"
+    source="Naming#CA1726"
+    severity="Medium High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182258(VS.100).aspx&quot;&gt;UsePreferredTerms&lt;/a&gt; - Replace the term 'Login' in member name 'SiteMaster.HeadLoginView' with the preferred alternate 'LogOn'."
+    severity-level="1"
+    popup-message="Use preferred terms over deprecated alternates."
+  />
+  <type type='fxcop' number='1' suppressed='0'/>
+</file>

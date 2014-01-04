@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation-array>
+  <task plugin="tasks@4.38">
+    <message>Add constructor logic here</message>
+    <priority>NORMAL</priority>
+    <key>0</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.54">
+        <start>18</start>
+        <end>18</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>18</primaryLineNumber>
+    <fileName>C:/Program Files (x86)/Jenkins/jobs/Test Project/workspace/WebProjectTest/TestPurchaseManager.cs</fileName>
+    <moduleName></moduleName>
+    <packageName>WebProjectTest</packageName>
+    <category></category>
+    <type>TODO</type>
+    <contextHashCode>-1537559383</contextHashCode>
+    <origin>tasks</origin>
+    <pathName>WebProjectTest</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+  </task>
+</annotation-array>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file
+  name="WebApplicationDemo.Account"
+  last-modified="0"
+>
+  <violation
+    line="0"
+    source="Design#CA1020"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182130(VS.100).aspx&quot;&gt;AvoidNamespacesWithFewTypes&lt;/a&gt; - Consider merging the types defined in 'WebApplicationDemo.Account' with another namespace."
+    severity-level="3"
+    popup-message="A namespace should generally have more than five types."
+  />
+  <type type='fxcop' number='1' suppressed='0'/>
+</file>

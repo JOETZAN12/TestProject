@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.plugins.tfs.model.WorkspaceConfiguration plugin="tfs@3.0.1">
+      <workspaceName>Hudson-Test Project-MASTER</workspaceName>
+      <workfolder>.</workfolder>
+      <projectPath>$/SQA/BuildProcessTemplates/Solution1</projectPath>
+      <serverUrl>http://tfs.aditi.com:8080/tfs/SQA</serverUrl>
+      <workspaceExists>false</workspaceExists>
+    </hudson.plugins.tfs.model.WorkspaceConfiguration>
+  </actions>
+  <number>1</number>
+  <startTime>1388732056598</startTime>
+  <result>FAILURE</result>
+  <duration>2172</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace</workspace>
+  <hudsonVersion>1.545</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

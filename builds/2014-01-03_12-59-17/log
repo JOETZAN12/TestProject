@@ -1,0 +1,72 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:29:17Z -noprompt ********
+All files are up to date.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:29:18Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+360       ADITI\raghuramanr 1/16/2012  fixed typo.
+[workspace] $ cmd /c call C:\Windows\TEMP\hudson6707631494109703106.bat
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace>call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x86 
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine version 4.0.30319.17929
+[Microsoft .NET Framework, version 4.0.30319.18051]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 1/3/2014 12:59:23 PM.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj" (2) on node 1 (default targets).
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj" (default targets) -- FAILED.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (3) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  BusinessApi -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (4) on node 1 (default targets).
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (4) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\BusinessObjects.csproj" (5) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  BusinessObjects -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\bin\Release\BusinessObjects.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\BusinessObjects.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  WebProjectTest -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\bin\Release\WebProjectTest.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (default targets).
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default target) (1) ->
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj" (default target) (2) ->
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.34
+Build step 'Build a Visual Studio project or solution using MSBuild' marked build as failure
+Finished: FAILURE

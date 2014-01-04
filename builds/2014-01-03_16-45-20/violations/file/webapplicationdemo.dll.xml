@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file
+  name="webapplicationdemo.dll"
+  last-modified="0"
+>
+  <violation
+    line="0"
+    source="Design#CA2210"
+    severity="High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182127(VS.100).aspx&quot;&gt;AssembliesShouldHaveValidStrongNames&lt;/a&gt; - Sign 'WebApplicationDemo.dll' with a strong name key."
+    severity-level="0"
+    popup-message="Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise)."
+  />
+  <violation
+    line="0"
+    source="Design#CA1014"
+    severity="Medium High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182156(VS.100).aspx&quot;&gt;MarkAssembliesWithClsCompliant&lt;/a&gt; - Mark 'WebApplicationDemo.dll' with CLSCompliant(true) because it exposes externally visible types."
+    severity-level="1"
+    popup-message="Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant."
+  />
+  <type type='fxcop' number='2' suppressed='0'/>
+</file>

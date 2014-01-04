@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file
+  name="WebApplicationDemo.Account.Login"
+  last-modified="0"
+>
+  <violation
+    line="0"
+    source="Naming#CA1702"
+    severity="Medium High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/bb264474(VS.100).aspx&quot;&gt;CompoundWordsShouldBeCasedCorrectly&lt;/a&gt; - The compound word 'HyperLink' in member name 'Login.RegisterHyperLink' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation."
+    severity-level="1"
+    popup-message="Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'."
+  />
+  <violation
+    line="0"
+    source="Naming#CA1726"
+    severity="Medium High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182258(VS.100).aspx&quot;&gt;UsePreferredTerms&lt;/a&gt; - Replace the term 'Login' in member name 'Login.LoginUser' with the preferred alternate 'LogOn'."
+    severity-level="1"
+    popup-message="Use preferred terms over deprecated alternates."
+  />
+  <violation
+    line="0"
+    source="Naming#CA1726"
+    severity="Medium High"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182258(VS.100).aspx&quot;&gt;UsePreferredTerms&lt;/a&gt; - Replace the term 'Login' in type name 'Login' with the preferred alternate 'LogOn'."
+    severity-level="1"
+    popup-message="Use preferred terms over deprecated alternates."
+  />
+  <type type='fxcop' number='3' suppressed='0'/>
+</file>

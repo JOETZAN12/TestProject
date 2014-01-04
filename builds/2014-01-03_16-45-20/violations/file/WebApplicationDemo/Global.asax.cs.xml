@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file
+  name="WebApplicationDemo/Global.asax.cs"
+  last-modified="1388747728814"
+  file="c:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Global.asax.cs"
+>
+  <violation
+    line="14"
+    source="Performance#CA1811"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182264(VS.100).aspx&quot;&gt;AvoidUncalledPrivateCode&lt;/a&gt; - 'Global.Application_Start(object, EventArgs)' appears to have no upstream public or protected callers."
+    severity-level="3"
+    popup-message="There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team."
+  />
+  <violation
+    line="19"
+    source="Performance#CA1811"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182264(VS.100).aspx&quot;&gt;AvoidUncalledPrivateCode&lt;/a&gt; - 'Global.Application_End(object, EventArgs)' appears to have no upstream public or protected callers."
+    severity-level="3"
+    popup-message="There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team."
+  />
+  <violation
+    line="24"
+    source="Performance#CA1811"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182264(VS.100).aspx&quot;&gt;AvoidUncalledPrivateCode&lt;/a&gt; - 'Global.Application_Error(object, EventArgs)' appears to have no upstream public or protected callers."
+    severity-level="3"
+    popup-message="There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team."
+  />
+  <violation
+    line="29"
+    source="Performance#CA1811"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182264(VS.100).aspx&quot;&gt;AvoidUncalledPrivateCode&lt;/a&gt; - 'Global.Session_Start(object, EventArgs)' appears to have no upstream public or protected callers."
+    severity-level="3"
+    popup-message="There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team."
+  />
+  <violation
+    line="37"
+    source="Performance#CA1811"
+    severity="Medium Low"
+    type="fxcop"
+    message="&lt;a href=&quot;http://msdn.microsoft.com/library/ms182264(VS.100).aspx&quot;&gt;AvoidUncalledPrivateCode&lt;/a&gt; - 'Global.Session_End(object, EventArgs)' appears to have no upstream public or protected callers."
+    severity-level="3"
+    popup-message="There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team."
+  />
+  <line number='5'>using System.Web.Security;</line>
+  <line number='6'>using System.Web.SessionState;</line>
+  <line number='7'></line>
+  <line number='8'>namespace WebApplicationDemo {</line>
+  <line number='9'>    public class Global : System.Web.HttpApplication {</line>
+  <line number='10'></line>
+  <line number='11'>        void Application_Start(object sender, EventArgs e) {</line>
+  <line number='12'>            // Code that runs on application startup</line>
+  <line number='13'></line>
+  <line number='14'>        }</line>
+  <line number='15'></line>
+  <line number='16'>        void Application_End(object sender, EventArgs e) {</line>
+  <line number='17'>            //  Code that runs on application shutdown</line>
+  <line number='18'></line>
+  <line number='19'>        }</line>
+  <line number='20'></line>
+  <line number='21'>        void Application_Error(object sender, EventArgs e) {</line>
+  <line number='22'>            // Code that runs when an unhandled error occurs</line>
+  <line number='23'></line>
+  <line number='24'>        }</line>
+  <line number='25'></line>
+  <line number='26'>        void Session_Start(object sender, EventArgs e) {</line>
+  <line number='27'>            // Code that runs when a new session is started</line>
+  <line number='28'></line>
+  <line number='29'>        }</line>
+  <line number='30'></line>
+  <line number='31'>        void Session_End(object sender, EventArgs e) {</line>
+  <line number='32'>            // Code that runs when a session ends. </line>
+  <line number='33'>            // Note: The Session_End event is raised only when the sessionstate mode</line>
+  <line number='34'>            // is set to InProc in the Web.config file. If session mode is set to StateServer </line>
+  <line number='35'>            // or SQLServer, the event is not raised.</line>
+  <line number='36'></line>
+  <line number='37'>        }</line>
+  <line number='38'></line>
+  <line number='39'>    }</line>
+  <line number='40'>}</line>
+  <type type='fxcop' number='5' suppressed='0'/>
+</file>

@@ -1,0 +1,44 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:11:56Z -noprompt ********
+All files are up to date.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/HelloWorld -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:11:57Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+4621      ADITI\akanchhas   1/17/2013  added for TF checkin
+[workspace] $ sh -xe C:\Windows\TEMP\hudson4052280951597590283.sh
+The system cannot find the file specified
+FATAL: command execution failed
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot run program "sh" (in directory "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:773)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:353)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:360)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:94)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:63)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:785)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:160)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:566)
+	at hudson.model.Run.execute(Run.java:1678)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 17 more
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,206 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -delete "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -new "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workfold -map $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace" "-workspace:Hudson-Test Project-MASTER" -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T09:17:32Z -noprompt ********
+C:\Program Files (x86)\Jenkins\jobs\Test Project:
+Getting workspace
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace:
+Getting Business
+Getting BusinessObjects
+Getting Local.testsettings
+Getting ThirdParty
+Getting TraceAndTestImpact.testsettings
+Getting WebAppDemo.testsettings
+Getting WebApplicationDemo
+Getting WebApplicationDemo.sln
+Getting WebApplicationDemo.vsmdi
+Getting WebApplicationDemo.vssscc
+Getting WebProjectTest
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business:
+Getting BusinessApi.csproj
+Getting BusinessApi.csproj.vspscc
+Getting IBillingGateway.cs
+Getting ITransactionManager.cs
+Getting Properties
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects:
+Getting BusinessObjects.csproj
+Getting BusinessObjects.csproj.vspscc
+Getting OrderDetails.cs
+Getting Properties
+Getting PurchaseManager.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty:
+Getting Moq
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq:
+Getting License.txt
+Getting Moq.chm
+Getting Moq.dll
+Getting Moq.pdb
+Getting Moq.xml
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo:
+Getting About.aspx
+Getting About.aspx.cs
+Getting About.aspx.designer.cs
+Getting Account
+Getting Default.aspx
+Getting Default.aspx.cs
+Getting Default.aspx.designer.cs
+Getting Global.asax
+Getting Global.asax.cs
+Getting Properties
+Getting Scripts
+Getting Site.Master
+Getting Site.Master.cs
+Getting Site.Master.designer.cs
+Getting Styles
+Getting Web.config
+Getting Web.Debug.config
+Getting Web.Release.config
+Getting WebApplicationDemo.csproj
+Getting WebApplicationDemo.csproj.vspscc
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Account:
+Getting ChangePassword.aspx
+Getting ChangePassword.aspx.cs
+Getting ChangePassword.aspx.designer.cs
+Getting ChangePasswordSuccess.aspx
+Getting ChangePasswordSuccess.aspx.cs
+Getting ChangePasswordSuccess.aspx.designer.cs
+Getting Login.aspx
+Getting Login.aspx.cs
+Getting Login.aspx.designer.cs
+Getting Register.aspx
+Getting Register.aspx.cs
+Getting Register.aspx.designer.cs
+Getting Web.config
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Scripts:
+Getting jquery-1.4.1.js
+Getting jquery-1.4.1.min.js
+Getting jquery-1.4.1-vsdoc.js
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Styles:
+Getting Site.css
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest:
+Getting Properties
+Getting TestPurchaseManager.cs
+Getting WebProjectTest.csproj
+Getting WebProjectTest.csproj.vspscc
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\Properties:
+Getting AssemblyInfo.cs
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo -recursive -stopafter:1 -noprompt -version:D2014-01-03T09:17:33Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+7444      ADITI\sudharsang  1/3/2014   Update to 2012
+[workspace] $ cmd /c call C:\Windows\TEMP\hudson3446028062932634738.bat
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace>call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x86 
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine version 4.0.30319.17929
+[Microsoft .NET Framework, version 4.0.30319.18051]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 1/3/2014 2:47:45 PM.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj" (2) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "bin\".
+  Creating directory "obj\Release\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.EnterpriseServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.ApplicationServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Entity.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug:pdbonly /optimize+ /out:obj\Release\WebApplicationDemo.dll /target:library /utf8output About.aspx.cs About.aspx.designer.cs Account\ChangePassword.aspx.cs Account\ChangePassword.aspx.designer.cs Account\ChangePasswordSuccess.aspx.cs Account\ChangePasswordSuccess.aspx.designer.cs Account\Login.aspx.cs Account\Login.aspx.designer.cs Account\Register.aspx.cs Account\Register.aspx.designer.cs Default.aspx.cs Default.aspx.designer.cs Global.asax.cs Properties\AssemblyInfo.cs Site.Master.cs Site.Master.designer.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\WebApplicationDemo.dll" to "bin\WebApplicationDemo.dll".
+  WebApplicationDemo -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\bin\WebApplicationDemo.dll
+  Copying file from "obj\Release\WebApplicationDemo.pdb" to "bin\WebApplicationDemo.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (3) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "bin\Release\".
+  Creating directory "obj\Release\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\Business.dll /target:library /utf8output IBillingGateway.cs ITransactionManager.cs Properties\AssemblyInfo.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Business.dll" to "bin\Release\Business.dll".
+  BusinessApi -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll
+  Copying file from "obj\Release\Business.pdb" to "bin\Release\Business.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (4) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "bin\Release\".
+  Creating directory "obj\Release\".
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (4) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\BusinessObjects.csproj" (5) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "bin\Release\".
+  Creating directory "obj\Release\".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\BusinessObjects.dll /target:library /utf8output OrderDetails.cs Properties\AssemblyInfo.cs PurchaseManager.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll" to "bin\Release\Business.dll".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.pdb" to "bin\Release\Business.pdb".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\BusinessObjects.dll" to "bin\Release\BusinessObjects.dll".
+  BusinessObjects -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\bin\Release\BusinessObjects.dll
+  Copying file from "obj\Release\BusinessObjects.pdb" to "bin\Release\BusinessObjects.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\BusinessObjects.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva- /reference:"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll" /reference:"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\bin\Release\BusinessObjects.dll" /reference:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" /reference:"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq\Moq.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\Release\WebProjectTest.dll /target:library /utf8output Properties\AssemblyInfo.cs TestPurchaseManager.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll" to "bin\Release\Business.dll".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\bin\Release\BusinessObjects.dll" to "bin\Release\BusinessObjects.dll".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq\Moq.dll" to "bin\Release\Moq.dll".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\bin\Release\BusinessObjects.pdb" to "bin\Release\BusinessObjects.pdb".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.pdb" to "bin\Release\Business.pdb".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq\Moq.pdb" to "bin\Release\Moq.pdb".
+  Copying file from "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq\Moq.xml" to "bin\Release\Moq.xml".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\WebProjectTest.dll" to "bin\Release\WebProjectTest.dll".
+  WebProjectTest -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\bin\Release\WebProjectTest.dll
+  Copying file from "obj\Release\WebProjectTest.pdb" to "bin\Release\WebProjectTest.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\WebProjectTest.csproj" (default targets).
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.92
+Finished: SUCCESS

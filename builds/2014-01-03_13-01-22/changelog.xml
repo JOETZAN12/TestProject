@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog>
+	<changeset version="7444">
+		<date>2014-01-03T07:30:13Z</date>
+		<user>ADITI_sudharsang</user>
+		<comment>Update to 2012</comment>
+		<items>
+			<item action="edit">$/TFSManagement/Source/Tools/DemoBuild/WebApplicationDemo/WebApplicationDemo.sln</item>
+			<item action="edit">$/TFSManagement/Source/Tools/DemoBuild/WebApplicationDemo/WebApplicationDemo/WebApplicationDemo.csproj</item>
+		</items>
+	</changeset>
+</changelog>

@@ -1,0 +1,240 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+Deleting workspace as the configuration has changed since a build was performed on this computer.
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspaces -format:brief -server:http://tfs.aditi.com:8080/tfs/corp ********
+Collection: http://tfs.aditi.com:8080/tfs/corp
+Workspace                  Owner            Computer Comment
+-------------------------- ---------------- -------- --------------------------
+Hudson-Demobuild-MASTER    ADITI\sudharsang MTALT098 
+Hudson-Test Project-MASTER ADITI\sudharsang MTALT098 
+Hudson-Test-MASTER         ADITI\sudharsang MTALT098 
+MTALT098                   ADITI\sudharsang MTALT098 
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -delete "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workspace -new "Hudson-Test Project-MASTER;Aditi\sudharsang" -noprompt -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" workfold -map $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace" "-workspace:Hudson-Test Project-MASTER" -server:http://tfs.aditi.com:8080/tfs/corp ********
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" get . -recursive -version:D2014-01-03T07:20:26Z -noprompt ********
+C:\Program Files (x86)\Jenkins\jobs\Test Project:
+Getting workspace
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace:
+Getting Business
+Getting BusinessObjects
+Getting Local.testsettings
+Getting ThirdParty
+Getting TraceAndTestImpact.testsettings
+Getting WebAppDemo.testsettings
+Getting WebApplicationDemo
+Getting WebApplicationDemo.sln
+Getting WebApplicationDemo.vsmdi
+Getting WebApplicationDemo.vssscc
+Getting WebProjectTest
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business:
+Getting BusinessApi.csproj
+Getting BusinessApi.csproj.vspscc
+Getting IBillingGateway.cs
+Getting ITransactionManager.cs
+Getting Properties
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects:
+Getting BusinessObjects.csproj
+Getting BusinessObjects.csproj.vspscc
+Getting OrderDetails.cs
+Getting Properties
+Getting PurchaseManager.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\BusinessObjects\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty:
+Getting Moq
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\ThirdParty\Moq:
+Getting License.txt
+Getting Moq.chm
+Getting Moq.dll
+Getting Moq.pdb
+Getting Moq.xml
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo:
+Getting About.aspx
+Getting About.aspx.cs
+Getting About.aspx.designer.cs
+Getting Account
+Getting Default.aspx
+Getting Default.aspx.cs
+Getting Default.aspx.designer.cs
+Getting Global.asax
+Getting Global.asax.cs
+Getting Properties
+Getting Scripts
+Getting Site.Master
+Getting Site.Master.cs
+Getting Site.Master.designer.cs
+Getting Styles
+Getting Web.config
+Getting Web.Debug.config
+Getting Web.Release.config
+Getting WebApplicationDemo.csproj
+Getting WebApplicationDemo.csproj.vspscc
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Account:
+Getting ChangePassword.aspx
+Getting ChangePassword.aspx.cs
+Getting ChangePassword.aspx.designer.cs
+Getting ChangePasswordSuccess.aspx
+Getting ChangePasswordSuccess.aspx.cs
+Getting ChangePasswordSuccess.aspx.designer.cs
+Getting Login.aspx
+Getting Login.aspx.cs
+Getting Login.aspx.designer.cs
+Getting Register.aspx
+Getting Register.aspx.cs
+Getting Register.aspx.designer.cs
+Getting Web.config
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Properties:
+Getting AssemblyInfo.cs
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Scripts:
+Getting jquery-1.4.1.js
+Getting jquery-1.4.1.min.js
+Getting jquery-1.4.1-vsdoc.js
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\Styles:
+Getting Site.css
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest:
+Getting Properties
+Getting TestPurchaseManager.cs
+Getting WebProjectTest.csproj
+Getting WebProjectTest.csproj.vspscc
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebProjectTest\Properties:
+Getting AssemblyInfo.cs
+[workspace] $ "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\tf.exe" history $/TFSManagement/Source/Tools/DemoBuild/webapplicationdemo -recursive -stopafter:1 -noprompt -version:D2014-01-03T07:20:27Z -format:brief ******** -server:http://tfs.aditi.com:8080/tfs/corp
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+360       ADITI\raghuramanr 1/16/2012  fixed typo.
+[workspace] $ cmd /c call C:\Windows\TEMP\hudson7513379274019606796.bat
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace>call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x86 
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe
+Executing the command cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace
+[workspace] $ cmd.exe /C C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe /p:Configuration=Release webapplicationdemo.sln && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine Version 3.5.30729.6387
+[Microsoft .NET Framework, Version 2.0.50727.6387]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+WebApplicationDemo\WebApplicationDemo.csproj : Solution file warning MSB4122: Scanning project dependencies for project "WebApplicationDemo\WebApplicationDemo.csproj" failed. The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj
+Build started 1/3/2014 12:50:40 PM.
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" on node 0 (default targets).
+  Building solution configuration "Release|Any CPU".
+Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (1) is building "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (2) on node 0 (default targets).
+Project file contains ToolsVersion="4.0", which is not supported by this version of MSBuild. Treating the project as if it had ToolsVersion="3.5".
+PrepareForBuild:
+  Creating directory "bin\Release\".
+  Creating directory "obj\Release\".
+ResolveAssemblyReferences:
+  Primary reference "Microsoft.CSharp".
+C:\Windows\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets : warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.CSharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+          For SearchPath "{Registry:Software\Microsoft\.NetFramework,v4.0,AssemblyFoldersEx}".
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 3\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 3\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Server\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Server\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Common\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Common\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft WCF Data Services\5.0\bin\.NETFramework\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft WCF Data Services\5.0\bin\.NETFramework\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\ReportViewer\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\ReportViewer\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Blend\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Blend\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Blend\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Blend\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Chart Controls\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Chart Controls\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files\Common Files\Microsoft Shared\VS7DEBUG\Program Files\Reference Assemblies\Microsoft\VSTA30\v11.0\.NET2.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files\Common Files\Microsoft Shared\VS7DEBUG\Program Files\Reference Assemblies\Microsoft\VSTA30\v11.0\.NET2.0\Microsoft.CSharp.dll", but it didn't exist.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.CSharp.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.CSharp.dll", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Microsoft.CSharp", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Microsoft.CSharp" as a file name, but it didn't exist.
+          For SearchPath "bin\Release\".
+          Considered "bin\Release\Microsoft.CSharp.exe", but it didn't exist.
+          Considered "bin\Release\Microsoft.CSharp.dll", but it didn't exist.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\Business.dll" to "bin\Release\Business.dll".
+  BusinessApi -> C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\bin\Release\Business.dll
+  Copying file from "obj\Release\Business.pdb" to "bin\Release\Business.pdb".
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (default targets).
+C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+Done Building Project "C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default target) (1) ->
+  WebApplicationDemo\WebApplicationDemo.csproj : Solution file warning MSB4122: Scanning project dependencies for project "WebApplicationDemo\WebApplicationDemo.csproj" failed. The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj
+
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default target) (1) ->
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\Business\BusinessApi.csproj" (default target) (2) ->
+(ResolveAssemblyReferences target) -> 
+  C:\Windows\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets : warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.CSharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+
+
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+
+"C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\webapplicationdemo.sln" (default target) (1) ->
+(Build target) -> 
+  C:\Program Files (x86)\Jenkins\jobs\Test Project\workspace\WebApplicationDemo\WebApplicationDemo.csproj(139,11): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+
+    2 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:04.36
+Build step 'Build a Visual Studio project or solution using MSBuild' marked build as failure
+Finished: FAILURE

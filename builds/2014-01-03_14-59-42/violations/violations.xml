@@ -1,0 +1,49 @@
+<violations>
+  <type name='fxcop'>
+    <file
+      name="WebApplicationDemo/Global.asax.cs"
+      count = '5'>
+      <severity level="3" count="5"/>
+      <source  name="Performance#CA1811" count="5"/>
+  </file>
+    <file
+      name="WebApplicationDemo.Account.Login"
+      count = '3'>
+      <severity level="1" count="3"/>
+      <source  name="Naming#CA1726" count="2"/>
+      <source  name="Naming#CA1702" count="1"/>
+  </file>
+    <file
+      name="webapplicationdemo.dll"
+      count = '2'>
+      <severity level="0" count="1"/>
+      <severity level="1" count="1"/>
+      <source  name="Design#CA1014" count="1"/>
+      <source  name="Design#CA2210" count="1"/>
+  </file>
+    <file
+      name="WebApplicationDemo"
+      count = '1'>
+      <severity level="3" count="1"/>
+      <source  name="Design#CA1020" count="1"/>
+  </file>
+    <file
+      name="WebApplicationDemo.Account"
+      count = '1'>
+      <severity level="3" count="1"/>
+      <source  name="Design#CA1020" count="1"/>
+  </file>
+    <file
+      name="WebApplicationDemo.SiteMaster"
+      count = '1'>
+      <severity level="1" count="1"/>
+      <source  name="Naming#CA1726" count="1"/>
+  </file>
+    <file
+      name="WebApplicationDemo._Default"
+      count = '1'>
+      <severity level="1" count="1"/>
+      <source  name="Naming#CA1707" count="1"/>
+  </file>
+  </type>
+</violations>
